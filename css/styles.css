@@ -1,6 +1,5 @@
 body {
   font-family: 'Raleway', sans-serif;
-  padding: 0 5% 0 10%;
   line-height: 1.5;
 }
 
@@ -16,14 +15,6 @@ h2 {
   font-size: 5rem;
 }
 
-.side-bar {
-  position: fixed;
-  left: 0;
-  line-height: 1;
-  width: 11rem;
-  top: 70px;
-}
-
 .side-ref {
   color: #206a5d;
 }
@@ -33,14 +24,12 @@ side-ref: hover {
 }
 
 .image-start {
-  width: 100px;
-  position: relative;
-  left: 50px;
+  width: 50px;
 }
 
 .side-content {
   position: relative;
-  left: 4rem;
+margin: 0 10%;
   top: 60px;
 }
 
