@@ -11,16 +11,12 @@ h2 {
   text-align: center;
 }
 
+h3 {
+  text-align: center;
+}
+
 .h11 {
   font-size: 5rem;
-}
-
-.side-ref {
-  color: #206a5d;
-}
-
-side-ref: hover {
-  color: #206a5d;
 }
 
 .image-start {
@@ -29,17 +25,17 @@ side-ref: hover {
 
 .side-content {
   position: relative;
-margin: 0 10%;
+  margin: 0 10%;
   top: 60px;
 }
 
 .amanda-display {
   font-size: 3rem;
-  color: #98ddca;
+  color: #ce1212;
 }
 
 .Tops {
-  background-color: #98ddca;
+  background-color: #ce1212;
   text-align: center;
   font-family: 'Roboto Slab-bold', serif;
   margin: 0 0 10px 0;
@@ -48,7 +44,7 @@ margin: 0 10%;
 }
 
 .colored2 {
-  background-color: #ccf2f4;
+  background-color: #ce1212;
   font-family: 'Roboto Slab', serif;
   padding: 40px 0 30px 0;
   margin: 0;
@@ -60,6 +56,7 @@ margin: 0 10%;
   padding: 40px 0 30px 0;
   margin: 0;
 }
+
 .bar-bar {
   position: relative;
   position: fixed;
@@ -67,6 +64,7 @@ margin: 0 10%;
   right: 0;
   left: 0;
 }
+
 .row {
   padding: 10px;
 }
@@ -75,6 +73,9 @@ margin: 0 10%;
   padding: 0 0;
 }
 
+body, .positioning{
+  margin: 0 10%;
+}
 @media (max-width: 1000px) {
   .amanda-display {
     font-size: 2rem;
@@ -84,5 +85,12 @@ margin: 0 10%;
     position: relative;
     left: 10px;
   }
-
+}
+.display-prop{
+  padding: 0;
+  margin: 10px 0 0 0;
+  height: 550px;
+}
+.example {
+  line-height: 0;
 }

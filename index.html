@@ -20,7 +20,7 @@
   <div class="bar-bar">
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
       <div class=" container-fluid">
-        <a class="navbar-brand amanda-display" href=""> <img class="image-start" src="https://media.giphy.com/media/ltc6n2cgPY4M0/giphy.gif" alt="coelho">Amanda Atsumi</a>
+        <a class="navbar-brand amanda-display" href=""> <img class="image-start" src="https://media.giphy.com/media/ltc6n2cgPY4M0/giphy.gif" alt="coelho"> Amanda Atsumi</a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
@@ -56,13 +56,13 @@
                 <li><a class="dropdown-item" href="#return-amanda-part">Return Functions</a></li>
               </ul>
             </li>
-            <li class="nav-item"><a class="nav-link" href="#boostrap-part">⬆</a></li>
+            <li class="nav-item"><a class="nav-link" href="positioning.html">Positioning</a></li>
           </ul>
         </div>
       </div>
     </nav>
   </div>
-<!-- Side Bar -->
+  <!-- Side Bar -->
 
   <!-- <div class="side-bar">
     <img class="image-start" src="https://media.giphy.com/media/ltc6n2cgPY4M0/giphy.gif" alt="sunflower">
@@ -87,8 +87,8 @@
       <ul class="side-ref"><a href="#call-function-amanda-part">Calling Functions</a></ul>
       <ul class="side-ref"><a href="#return-amanda-part">Return Functions</a></ul> -->
 
-      <!-- <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a> -->
-    </nav>
+  <!-- <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a> -->
+  </nav>
   </div>
   <!-- Top content -->
   <div class="side-content">
@@ -128,12 +128,12 @@
           <li>When using Google Fonts, you need to import sizes 100, 400 and 900</li>
           <li>Example:</li>
           <div class="row">
-            <div class="col-lg-2 col-md-3 col-sm6" style="background-color: #9dbeb9" ;>Test 1</div>
-            <div class="col-lg-2 col-md-3 col-sm6" style="background-color: #9dbeb9" ;>Test 2</div>
-            <div class="col-lg-2 col-md-3 col-sm6" style="background-color: #9dbeb9" ;>Test 3</div>
-            <div class="col-lg-2 col-md-3 col-sm6" style="background-color: #9dbeb9" ;>Test 4</div>
-            <div class="col-lg-2 col-md-3 col-sm6" style="background-color: #9dbeb9" ;>Test 5</div>
-            <div class="col-lg-2 col-md-3 col-sm6" style="background-color: #9dbeb9" ;>Test 6</div>
+            <div class="col-lg-2 col-md-3 col-sm6" style="background-color: #ffcc29" ;>Test 1</div>
+            <div class="col-lg-2 col-md-3 col-sm6" style="background-color: #ffcc29" ;>Test 2</div>
+            <div class="col-lg-2 col-md-3 col-sm6" style="background-color: #ffcc29" ;>Test 3</div>
+            <div class="col-lg-2 col-md-3 col-sm6" style="background-color: #ffcc29" ;>Test 4</div>
+            <div class="col-lg-2 col-md-3 col-sm6" style="background-color: #ffcc29" ;>Test 5</div>
+            <div class="col-lg-2 col-md-3 col-sm6" style="background-color: #ffcc29" ;>Test 6</div>
           </div>
         </ul>
       </div>
@@ -158,10 +158,15 @@
     <div class="row">
       <div class="col-lg-6 colored1">
         <h2 id="rotate-amanda-part">Rotate images</h2>
-        <ul>
-          <li>Add a class to the image</li>
-          <li>Use element <strong>Transform: Rotate(25deg)</strong> to rotate it. Negative numbers turn it to left</li>
-        </ul>
+        <dl>
+          <dt>Add a class to the image</dt>
+          <dd>Use element <strong>Transform: Rotate(25deg)</strong> to rotate it. Negative numbers turn it to left</dd>
+        </dl>
+        <br>
+        <dl>
+          <dt>DL > DT</dt>
+          <dd>DD</dd>
+          </dt>
       </div>
       <div class="col-lg-6 colored1">
         <h2 id="carousel-amanda-part">Carousel</h2>
@@ -365,6 +370,15 @@
           <li>When adding more than 1 you have to use <strong>Var x = 5:</strong>
           <li>Math.floor (Number we want to be rounded down)</li>
           <li>Math.ceil (Number we want to be rounded up)</li>
+          <li>Math.round ==> rounds the number</li>
+          <li>Math.floor/ceil ==> rounds up or down</li>
+          <li>Math.pow = it powers a number to the expoent</li>
+          <li>Math.random() ==> it brings random numbers from 0 to 0.99 </li>
+          <dl><dt>You can narrow the results by adding a lines like this</dt>
+            <dd>var n = Math.random ();</dd>
+            <dd>n = n*6 (range is below this number. To add it to the results you add <strong>n = Math.floor(n)+1;</strong>)</dd>
+            <dd>console.log(n);</dd>
+          </dl>
           <ul>
             <li> and x += 2</li>
             <li>Or bring a new variable Y = 3 ==> <strong>x += y</strong></li>
@@ -383,19 +397,191 @@
         </ul>
       </div>
     </div>
+    <div class="row">
+      <div class="colored2 col-lg-6">
+        <h2 id="return-amanda-part">Return</h2>
+        <ul>
+          <li>Funtion funtionName (inputName) {<strong>return</strong> inputName % price}</li>
+          <Li>Funtion getMilk (money){ Return money % 15 ==> <strong>Call the function</strong>var change= getMilk(4); }</Li>
+          <li><Strong>Return</Strong> is the keyword that permits the function to have a output</li>
+          <li>The return inside the creating part of a function is the output when calling the function</li>
+          <li>It is used as <strong>return (variable name);</strong></li>
+        </ul>
+      </div>
+      <div class="colored2 col-lg-6 ">
+        <h2 id="Control-statement">Control Statements (or <strong>If & Else</strong>)</h2>
+        <ul>
+          <li>It is structures as</li>
+          <ul>if (track === "clear"){</ul>
+          <ul>goStraight ();</ul>
+          <ul>} else {</ul>
+          <ul>turnRight();</ul>
+          <ul>}</ul>
+          <li><strong>===</strong> is equals to and the information has the same type of date</li>
+          <li><strong>==</strong> is equals to and the information has <strong>not</strong> the same type of date</li>
+          <li><strong>!==</strong> is not equal to</li>
+          <li><strong>></strong> is greater than</li>
+          <li><strong>
+              < </strong> is lesser than </li>
+          <li><strong> >= </strong> is greater than equal</li>
+          <li><strong>
+              <= </strong> is lesser than equal</li>
+        </ul>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-lg-6 colored1">
+        <h2>Combining comparators</h2>
+        <ul>
+          <li>&& and</li>
+          <li>|| or</li>
+          <li>! not</li>
+          <li>Example if bmi > 38 && bmi < 78</li>
+        </ul>
+      </div>
+      <div class="col-lg-6 colored1 example">
+        <h2>Example of BMI</h2>
+        <ul>function <strong>bmiCalculator</strong> (weight, height) {</ul>
+        <ul>var <strong>bmi</strong> = Math.round((weight/ Math.pow(height,2)));</ul>
+        <ul>if (<strong>bmi</strong>
+          < 18.5) {</ul>
+            <ul>return "Your BMI is "+ <strong>bmi</strong> + ", so you are underweight.";</ul>
+            <ul>}</ul>
+            <ul>if (<strong>bmi</strong> >=18.5 && <strong>bmi</strong>
+              <=24.9) {</ul>
+                <ul>return "Your BMI is " + <strong>bmi</strong> + ", so you have a normal weight.";</ul>
+                <ul>}</ul>
+                <ul>else (<strong>bmi</strong> > 24.9)</ul>
+                <ul>return "Your BMI is " + <strong>bmi</strong> + ", so you are overweight.";</ul>
+                <ul>}</ul>
+                <ul><strong>bmiCalculator</strong>(60,2);</ul>
+                <ul>Result is "Your BMI is 15, so you are underweight."</ul>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-lg-6 colored2">
+        <h2>Example of Year Leap</h2>
+        <ul>
+          <li>function <strong>isLeap(year)</strong> {</li>
+          <li>if <strong>(year % 4 === 0)</strong>{</li>
+          <li>if (<strong>(year % 100 === 0)</strong> {</li>
+          <li>if <strong>(year % 400 === 0)</strong> {</li>
+          <li>return "Leap year."</li>
+          <li>} elsel {</li>
+          <li>return "not leat year"</li>
+          <li>}</li>
+          <li>}else{</li>
+          <li>return "Leap year."</li>
+          <li>}</li>
+          <li>} else{</li>
+          <li>return "Not leap year."</li>
+          <li>}</li>
+          <li>}</li>
+          <li>isLeap(2000)</li>
+          <li>Outcome "Leap year"</li>
+        </ul>
+      </div>
+      <div class="col-lg-6 colored2">
+        <h2>Arrays</h2>
+        <ul>
+          <li>To create a list of items in a variable you need to use <strong>[ ]</strong></li>
+          <li>var guessList = [0,1,2,3,4]</li>
+          <li>To call it you use <strong>console.log(guestList[0]);</strong> and it will pull the first name</li>
+          <li>varName.lenght;</li>
+          <li>If you create a variant and add info to it, you can use <strong>push</strong> and it will be added to the array</li>
+          <li>Example: var output (); => output.push (1) will bring [1] and after that output.push(2) will bring [1,2]</li>
+          <li>As <strong>varName.push</strong> add values to the end of your array, <strong>varName.pop</strong> removes it from the end of the array</li>
+          <li>To Refrieve an information you <strong>varName[1,3]</strong>, the 1 and 3 are the positions</li>
+          <li>varName.includes(strings) => It will return true or false</li>
+        </ul>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-lg-6 colored1">
+        <h2>fizzBuzz Challenge</h2>
+        <ul>
+          <li>var output = [];</li>
+          <li>var count = 1;</li>
+          <li>function fizzBuzz(){</li>
+          <li>if (count % 3 === 0 && count % 5 === 0 ){</li>
+          <li>output.push("fizzBuzz");</li>
+          <li>} else if (count % 3 === 0){</li>
+          <li>output.push("Fizz");</li>
+          <li>} else if (count % 5 === 0){</li>
+          <li>output.push("Buzz");</li>
+          <li>} else {</li>
+          <li>output.push(count);</li>
+          <li>}</li>
+          <li>count++;</li>
+          <li>console.log(output);</li>
+          <li>}</li>
+        </ul>
+      </div>
+      <div class="col-lg-6 colored1">
+        <h2>While Loops (while is a statement)</h2>
+        <ul>while <strong>(something is true)</strong>  {do something}</ul>
+        <ul><strong>
+            <li>Funtion name(){</li>
+            <li>while (some condition = > <) {</li>
+            <li>**funtions content**/li>
+            <li>}</li>
+            console.log(varName);
+            <li>}</li>
+          </strong></ul>
+        <ul>
+          <li>One infinite loop is when the console crash, because something is missing, and the function is running to infinite</li>
+        </ul>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-lg-6 colored2">
+        <H2>Foor Loops (iterate)</H2>
+        <ul>
+          <li>It is written <strong>for (start; end; change) {do something}</strong></li>
 
-    <div class="colored2">
-      <h2 id="return-amanda-part">Return</h2>
-      <ul>
-        <li>Funtion funtionName (inputName) {<strong>return</strong> inputName % price}</li>
-        <Li>Funtion getMilk (money){ Return money % 15 ==> <strong>Call the function</strong>var change= getMilk(4); }</Li>
-        <li><Strong>Return</Strong> is the keyword that permits the function to have a output</li>
-        <li>The return inside the creating part of a function is the output when calling the function</li>
 
-      </ul>
+        </ul>
+
+      </div>
+      <div class="col-lg-6 colored2 example">
+        <h2>Fibonacci challenge</h2>
+          <ul>function fibonacciGenerator (n) {</ul>
+          <ul>var output = [0]</ul>
+          <ul>if(n === 1){</ul>
+          <ul>return output;</ul>
+          <ul>} else if (n === 2 ) {</ul>
+          <ul>output = [0,1];</ul>
+          <ul>return output;</ul>
+          <ul>} else</ul>
+          <ul>{</ul>
+          <ul>output = [0,1];</ul>
+          <ul>for (var i = 2 ; i < n ; i++) {</ul>
+          <ul>output.push(output[output.length-1] + output[output.length-2]);</ul>
+          <ul>}</ul>
+          <ul>return output</ul>
+          <ul>}</ul>
+          <ul>}</ul>
+          <ul>fibonacciGenerator(7);</ul>
+      </div>
+    </div>
+    <div class="row">
+<div class="col-lg-6 colored1">
+<h2>Integration HTML and Javascript</h2>
+<ul>
+  <li><strong>Inside body javascript</strong> ==> < body onload="alert('text')" > </li>
+  <ul>It is not modular and hard to debug</ul>
+  <li><strong>Internal javascript</strong> uses a <strong>script tag ==>< script > alert("hello"); < /script></strong></li>
+</ul>
+<h2>DOM (document object model)</h2>
+
+
+</div>
+<div class="col-lg-6 colored1"></div>
+
     </div>
   </div>
   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js" integrity="sha384-SR1sx49pcuLnqZUnnPwx6FCym0wLsk5JZuNx2bPPENzswTNFaQU1RDvt3wT4gWFG" crossorigin="anonymous"></script>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.min.js" integrity="sha384-j0CNLUeiqtyaRmlzUHCPZ+Gy5fQu0dQ6eZ/xAww941Ai1SxSY+0EQqNXNE6DZiVc" crossorigin="anonymous"></script></body>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.min.js" integrity="sha384-j0CNLUeiqtyaRmlzUHCPZ+Gy5fQu0dQ6eZ/xAww941Ai1SxSY+0EQqNXNE6DZiVc" crossorigin="anonymous"></script>
+</body>
 
 </html>
