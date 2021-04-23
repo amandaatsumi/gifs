@@ -564,17 +564,74 @@
           <ul>fibonacciGenerator(7);</ul>
       </div>
     </div>
-    <div class="row">
-<div class="col-lg-6 colored1">
+<div class="colored1">
 <h2>Integration HTML and Javascript</h2>
 <ul>
   <li><strong>Inside body javascript</strong> ==> < body onload="alert('text')" > </li>
-  <ul>It is not modular and hard to debug</ul>
-  <li><strong>Internal javascript</strong> uses a <strong>script tag ==>< script > alert("hello"); < /script></strong></li>
+    <ul>It is not modular and hard to debug</ul>
+  <li><strong>Internal javascript</strong> uses a <strong>script tag ==>
+    <ul>< script > alert("hello"); < /script></strong></li></ul>
+  <li><strong>External File/source:</strong> Create a file in the same index.html folder</li>
+    <ul>It should be called <strong>index.js</strong></ul>
+    <ul>add a tag < script >< /script> and refer to the index.js in the <strong>source part(src)</strong></ul>
+    <ul>Then you'll be able to create the keywords/functions you'd like your website to have</ul>
+    <ul>The position inside the html document is important, so it should go right before the closing body tag</ul>
 </ul>
+</div>
+<div class="colored2">
 <h2>DOM (document object model)</h2>
+<ul>
+  <li>It catalogs the webpage into individual objects that can be changed. It uses the website's structure to give more characteristcs</li>
+  <li>Tree structure: All html are objects in hierarchy</li>
+  <li>HTML three visualizer turns the html into a DOM tree</li>
+    <ul>
+      <li>You can see part of the struture, selecting <strong>document.firstElementChild;</strong> you will see the entire HTML</li>
+      <li><strong>Document.firstElementChild.firstElementChild</strong> will refer to the head</li>
+      <li><strong>Document.firstElementChild.lastElementChild</strong> will refer to the body</li>
+      <li><strong>Document.firstElementChild.lastElementChild.firstElementChild</strong> will refer to the first H1</li>
+      <ul>
+        <li>To manipulate it, I should creat <strong>var heading = "that object"</strong>, in this case document.firstElementChild.lastElementChild.firstElementChild</li>
+        <li>Then to manipulate it I enter <strong>heading.innerHTML = "new text";</strong> and this will change the H1 content</li>
+        <li>Other example is <strong>heading.style.color = "red";</strong>, and it will change the color</li>
+      </ul>
+      <li>To select the checkbox for example, you use <strong>document.querySelector("input").click()</strong> and it will simulate the mouse click</li>
+    </ul>
+    <li>The objects have</li>
+    <ul>
+      <li><strong>Properties</strong>: describe something about the object (car chracteristics)</li>
+        <ul>
+          <li>They can be set. Setting a property is assigning a value to it. <strong>= something</strong></li>
+          <li>They can be get. <strong>car.color;</strong> and they will retrieve the information</li>
+          <li>Examples: innerHTML, style, firstChild</li>
+        </ul>
+        <ul>
+          <li>Call a Method gives a action to <strong>an object</strong>, orientation <strong>car.drive()</strong></li>
+          <ul>
+            <li>Examples: click(), appendChild(), setAttribute() </li>
+          </ul>
 
+        </ul>
+      <li><strong>Methods</strong>: What the object can do (car actions)</li>
+    </ul>
+    <li>Examples of Properties</li>
+      <ul>
+        <li>document.getElementsByTagName("li"); = It brings all list items in the html</li>
+        <li>document.getElementsByTagName("li")[2].style.color = "red");</li>
+        <li>document.getElementsByTagName("li").length; will bring the number of elements like this</li>
+        <li>document.getElementsByClassName("btn"); </li>
+        <li>document.getElementById (no plural, so no array )</li>
+        <li>document.querSelector(".btn");</li>
+          <ul>
+            <li>You select the same way we use the selectors in CSS</li>
+            <li>If you want to select more specifically you can use <strong>document.querySelector("li a")</strong> and it will select the anchor tag inside the list item</li>
+            <ul><li>Do not forget to add the space between selectors ("li a")</li></ul>
+            <li>If you are combining items in the same element <strong>("h2.colored2")</strong></li>
+            <li>If you combine a selector that repeats over the html, it will bring the first occurrence</li>
+            <li>To see all of them you have to add <strong>document.querySelectorAll("#list a")</strong></li>
 
+          </ul>
+      </ul>
+</ul>
 </div>
 <div class="col-lg-6 colored1"></div>
 
