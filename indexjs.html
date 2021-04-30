@@ -20,7 +20,7 @@
   <div class="bar-bar">
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
       <div class=" container-fluid">
-        <a class="navbar-brand amanda-display" href=""> <img class="image-start" src="https://media.giphy.com/media/ltc6n2cgPY4M0/giphy.gif" alt="coelho"> Amanda Atsumi</a>
+        <a class="navbar-brand amanda-display" href=""> <img class="image-start" src="https://media.giphy.com/media/OsT83ye3hCchHFXWWj/giphy.gif" alt="bird"> Amanda Atsumi</a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
@@ -38,7 +38,8 @@
             </li>
 
           </ul>
-                      <li class="nav-item"><a class="nav-link" href="positioning.html">Positioning</a></li>
+          <li class="nav-item"><a class="nav-link" href="positioning.html">Positioning</a></li>
+          <li class="nav-item"><a class="nav-link" href="indexjq.html">jquery</a></li>
           </ul>
         </div>
       </div>
@@ -208,6 +209,17 @@
           <li>The return inside the creating part of a function is the output when calling the function</li>
           <li>It is used as <strong>return (variable name);</strong></li>
         </ul>
+        <p><Strong>An Example</Strong></p>
+        <ul class="example">function add(num1, num2) {</ul>
+        <ul class="example"> return num1 + num2</ul>
+        <ul class="example">}</ul>
+        <ul class="example">function multiply(num1, num2) {</ul>
+        <ul class="example"> return num1 * num2</ul>
+        <ul class="example">}</ul>
+        <ul class="example">function calculator(num1, num2, operator) {</ul>
+        <ul class="example"> return operator(num1 + num2);</ul>
+        <ul class="example">}</ul>
+        <ul class="example">Call on console <strong>calculator(4,5,multiply);</strong> </ul>
       </div>
       <div class="colored2 col-lg-6 ">
         <h2 id="Control-statement">Control Statements (or <strong>If & Else</strong>)</h2>
@@ -365,24 +377,38 @@
             <ul>fibonacciGenerator(7);</ul>
       </div>
     </div>
-    <div class="colored1">
-      <h2>Integration HTML and Javascript</h2>
-      <ul>
-        <li><strong>Inside body javascript</strong> ==> < body onload="alert('text')">
-        </li>
-        <ul>It is not modular and hard to debug</ul>
-        <li><strong>Internal javascript</strong> uses a <strong>script tag ==>
-            <ul>
-              < script> alert("hello"); < /script>
-          </strong></li>
-      </ul>
-      <li><strong>External File/source:</strong> Create a file in the same index.html folder</li>
-      <ul>It should be called <strong>index.js</strong></ul>
-      <ul>add a tag < script>
-          < /script> and refer to the index.js in the <strong>source part(src)</strong></ul>
-      <ul>Then you'll be able to create the keywords/functions you'd like your website to have</ul>
-      <ul>The position inside the html document is important, so it should go right before the closing body tag</ul>
-      </ul>
+    <div class="row">
+      <div class="col-lg-6 colored1">
+        <h2>Integration HTML and Javascript</h2>
+        <ul>
+          <li><strong>Inside body javascript</strong> ==> < body onload="alert('text')">
+          </li>
+          <ul>It is not modular and hard to debug</ul>
+          <li><strong>Internal javascript</strong> uses a <strong>script tag ==>
+              <ul>
+                < script> alert("hello"); < /script>
+            </strong></li>
+        </ul>
+        <li><strong>External File/source:</strong> Create a file in the same index.html folder</li>
+        <ul>It should be called <strong>index.js</strong></ul>
+        <ul>add a tag < script>
+            < /script> and refer to the index.js in the <strong>source part(src)</strong></ul>
+        <ul>Then you'll be able to create the keywords/functions you'd like your website to have</ul>
+        <ul>The position inside the html document is important, so it should go right before the closing body tag</ul>
+        </ul>
+      </div>
+      <div class="col-lg-6 colored1">
+        <h2>DEBUG on Google Tools</h2>
+        <ul>
+          <li>Write the code to return the operation in the console</li>
+          <li>calculator(1,2,multiply) ==> debugger; calculator (1,2,multiply);</li>
+          <li>It will open the yellow window in the source area</li>
+          <li>Look for the "step into the next function call" on the right, and if you click it it will run every step of the function</li>
+          <li>DEBUG MODE</li>
+        </ul>
+        <h2>High Order Functions</h2>
+        <p>Functions that can take other functions as inputs</p>
+      </div>
     </div>
     <div class="colored2">
       <h2>DOM (document object model)</h2>
@@ -445,10 +471,186 @@
           <li>The selectos used are the same as CSS, without the <strong>"-"</strong> and in camel case likeThis</li>
           <li>Also, the sizes need to be represented in <strong>"as a string"</strong></li>
         </ul>
-
       </ul>
     </div>
-    <div class="col-lg-6 colored1"></div>
+    <div class="row">
+      <div class="col-lg-6 colored1">
+        <h2>ClassList</h2>
+        <ul>
+          <li>Allows you to change the style controling the Javascript, adding a class defined in CSS</li>
+          <ul>
+            <li>document.querySelector("button")<strong>.classList.add("invisible")</strong>;</li>
+            <li>Than you define the style in CSS, and you can <strong>add</strong> or <strong>remove</strong> (classList.remove(" ")) a class</li>
+            <li><strong>classList.toggle("class-name")</strong>: It applies or withdraw the class. If it is applied, it withdraw, but if is not applied, it applies</li>
+            <li>If you want to call it in the Console you use document.querySelector("h1").classList.add("class-name");</li>
+          </ul>
+          <li>document.querySelector("h1").textContent; gives you the content in Header 1</li>
+          <li>document.querySelector("h1").innerHTML; allows to change the text, but you can also add</li>
+          <ul>
+            <li>document.querySelector("h1").innerHTML = "<en>Good Bye</en>";</li>
+            <li>Not only you you change the text, but you also italisize it, but needs to be inside string </li>
+          </ul>
+        </ul>
+      </div>
+      <div class="col-lg-6 colored1">
+        <h2>Changing Attributes with Javascript</h2>
+        <ul>
+          <li>Everything inside a tag is an attribute ==> < h1 class="huge">, the class is an attribute (orange)</li>
+          <li><strong>document.querySelector("a").attributes</strong> will show all attributes iattached to the HTML element</li>
+          <li><strong>document.querySelector("a").GetAttributes("href")</strong> will bring the link</li>
+          <li><strong>document.querySelector("a").SetAttributes("href", "www.gmail.com")</strong> changes the link, but you have to add the <strong>href</strong> to refer to the link, and then the <strong>, "new link"</strong>, so it replaces it</li>
+          <li><strong>document.querySelectorAll(".class")[</strong>which one from all elements <strong>]</strong> apply the action to especific item</li>
+          <li>Many items together</li>
+          <ul>
+            <ul>var varName = Math.round(Math.random() * 2);</ul>
+            <ul>var imageGame2 = "images/hand" + imageNumber2 + ".png";</ul>
+            <ul>document.querySelectorAll("img")[1].setAttribute("src", imageGame2)</ul>
+            <ul>
+              <li>Change only the numbers to differ the pictures. It didn't work for the name</li>
+              <li>SelectorAll - brings all times that element repeats and the <strong>[ ]</strong> specifies which one</li>
+              <li><strong>set.Attribute("firstElement", Second Element)</strong> changes the first element to the second</li>
+            </ul>
+            <li>To Apply conditionals <strong>IF</strong></li>
+            <ul>
+              <ul>if (imageNumber1 === 0 && imageNumber2 === 1 ){</ul>
+              <ul>document.querySelector("h3").innerHTML = "Message1"</ul>
+              <ul>}</ul>
+              <ul>else if (imageNumber1 === 0 && imageNumber2 === 2 ) {</ul>
+              <ul>document.querySelector("h3").innerHTML = "Message2"</ul>
+              <ul>}else if (imageNumber1 === 1 && imageNumber2 === 2 ){</ul>
+              <ul>document.querySelector("h3").innerHTML = "Message3"</ul>
+              <ul>}else {</ul>
+              <ul>document.querySelector("h3").innerHTML = "Message4"</ul>
+              <ul>}</ul>
+            </ul>
+          </ul>
+
+        </ul>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-lg-6 colored2">
+        <h2>Drum Challenge</h2>
+        <ul>
+          <li>It expects that with this the alert shows clicking all items</li>
+        </ul>
+        <ul>var numberOfDrumButtons = document.querySelectorAll(".drum").length;</ul>
+        <ul>for (var i = 0 ; i < numberOfDrumButtons; i++) {</ul>
+            <ul>document.querySelectorAll(".drum")[i].addEventListener("click", function (){</ul>
+            <ul>alert("worked");</ul>
+            <ul> } ) ; </ul>
+            <ul>}</ul>
+            <ul>The additional elements</ul>
+            <li>Sound: it is defined on the Javascript file</li>
+            <li>Background-image for the instruments are added on CSS</li>
+      </div>
+      <div class="col-lg-6 colored2">
+        <ul>
+          <li>To Create Buttons with actions</li>
+          <ul>
+            <li>To refer to the button, and only the first one to test, refer to the class of the button </li>
+            <li>Then, <strong>document.querySelector("").methodOfYourChoice</strong></li>
+            <li><strong>document.querySelector("button").addEventListener("EventType","Javascript Function")</strong></li>
+            <li>Do not add the parantesis in the function when calling the event, or it will call the envent when the page loads</li>
+            <li>This calls passing the Javascript Function as a <strong>input</strong> so you can call it later, in this case, with the click</li>
+            <li>The other option is write the function as a anonymous function</li>
+            <li>Not calling the method: <strong>document.querySector("button").addEventListener("click", functionName){funtion functionName(something)}</strong></li>
+            <li>And anonymous function: <strong>document.querySelector("button").addEventListener("click", function (){something}</strong></li>
+            <li>Create a Function(){Alert("action replace alert")}</li>
+          </ul>
+          <li>To count how manu elements of a type exists</li>
+          <li>var numberOfDrumButtons = querySelectorAll(."element-class").length;</li>
+          <li>And it can be used as a reference to a <strong>Loop For</strong> (var i = 0, 1 < numberOfDrumButtons, i++)</li>
+        </ul>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-lg-6 colored 1">
+        <h2>Adding Elements to the Javascript</h2>
+        <ol>
+          <li>Audio Elements</li>
+          <ul>
+            <li>var audio = new Audio ('audio_file_name.mp3'); audio play();</li>
+          </ul>
+        </ol>
+
+      </div>
+      <div class="col-lg-6 colored 1">
+        <h2>New CSS elements</h2>
+        <ul>
+          <li>backgroun-image: url("where_the_file_is")</li>
+        </ul>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-lg-6 colored2">
+        <h2>Construction Function</h2>
+        <ul>function <strong>B</strong>ell<strong>B</strong>oy (name, age, hasWorkPermit, languages) {</ul>
+        <ul>this.name = name;</ul>
+        <ul>this.age = age,</ul>
+        <ul>this.hasWorkPermit = hasWorkPermit;</ul>
+        <ul>this.languages = language
+          <ul>
+            <li>The name of a construction function are different than the other functions <strong>C</strong>onstruct<strong>F</strong>unction</li>
+            <li>To add data to this function, I should use </li>
+            <li><strong>var bellboy1 = new BellBoy(Tim, 19, yes, english)</strong></li>
+            <li>Than in the Console enter: <strong>console.log(bellboy1.years)</strong> to be able to retrice the information for that data</li>
+
+          </ul>
+          <br>
+          <h2>Adding a function to an object (METHOD)</h2>
+          <ul>
+            <li>You add the second function as a new parameter</li>
+            <ul>function <strong>B</strong>ell<strong>B</strong>oy (name, age, hasWorkPermit, languages) {</ul>
+            <ul>this.name = name;</ul>
+            <ul>this.age = age,</ul>
+            <ul>this.hasWorkPermit = hasWorkPermit;</ul>
+            <ul>this.languages = language</ul>
+            <ul>moveSuitcase: function(){</ul>
+            <ul>
+              <ul>alert("May I move your suitcase?")</ul>
+              <ul>pickUpSuitcase();</ul>
+              <ul>move();</ul>
+            </ul>
+            <ul>} }</ul>
+            <li>To call this Method <strong>bellboy1.moveSuitcase();</strong></li>
+            <li>The difference between a Method and a Property are the <strong>( )</strong></li>
+            <li>To add this function to the Construction function, add the this</li>
+            <ul><li>this.moveSuitcase: .....</li></ul>
+          </UL>
+      </div>
+      <div class="col-lg-6 colored2">
+        <h2>Switch Statement</h2>
+        <ul>
+          <li>Switch (if) "value"<strong> : </strong>(the two dots starts the "do something" and it ends with <strong>break;</strong>) </li>
+          <li>The is like the else statement, so you can add for example "console.log(varName)"</li>
+          <li>It is necessary to create a variable before to get the information needed</li>
+          <li class="more">var buttonInnerHTML = this.innerHTML</li>
+          <ul class="more"><strong>switch (buttonInnerHTML) {</strong></ul>
+          <ul class="more"><strong>case "w:</strong></ul>
+          <ul class="more">var tom1 = new Audio("sounds/tom-1.mp3")</ul>
+          <ul class="more">tom1.play();</ul>
+          <ul class="more"><strong>break;</strong></ul>
+          <ul class="more"><strong>case "a":</strong></ul>
+          <ul class="more">var tom2 = new Audio("sounds/tom-2.mp3")</ul>
+          <ul class="more">tom2.play();</ul>
+          <ul class="more"><strong>break;</strong></ul>
+          <ul class="more"><strong>default:</strong></ul>
+          <ul class="moree"><strong>}</strong></ul>
+        </ul>
+        <h6>The original expression is</h6>
+        <ul>
+          <ul class="more"><strong>switch (expression) {</strong> Replaces expression for the variable's name</ul>
+          <ul class="more"><strong>case expression:</strong> substitute the especific part you want</ul>
+          <ul class="more"> Enter What you want it to do (the do something part)</ul>
+          <ul class="more"><strong>break;</strong> Here you enter the other options in case the first expression is not true</ul>
+          <ul>Add new lines of <strong>case expression: and what you want it to do</strong></ul>
+          <ul>To add new statements add a new <strong>break; case expression: what to do;</strong></ul>
+          <ul class="more"><strong>default:</strong></ul>
+          <ul class="more"><strong>}</strong></ul>
+        </ul>
+      </div>
+    </div>
 
   </div>
   </div>
