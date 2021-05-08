@@ -1,71 +1,200 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
-  <head>
-    <meta charset="utf-8">
-    <title>JQuery</title>
 
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@100;400;900&family=Roboto+Slab:wght@100;900&display=swap" rel="stylesheet">
+<head>
+  <meta charset="utf-8">
+  <title>JQuery</title>
 
-    <link rel="stylesheet" href="css/styles.css">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@100;400;900&family=Roboto+Slab:wght@100;900&display=swap" rel="stylesheet">
 
-  </head>
-  <body>
-    <!-- Navegation Bar -->
+  <link rel="stylesheet" href="css/styles.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
 
-    <div class="bar-bar">
-      <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <div class=" container-fluid">
-          <a class="navbar-brand amanda-display" href="">
-            <img class="image-start" src="https://media.giphy.com/media/26FxJ7Jx9D8BGk7gA/giphy.gif" alt="dog">
-            Amanda Atsumi</a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarNavDropdown">
-            <ul class="navbar-nav ms-auto">
-              <li class="nav-item">
-                <a class="nav-link" href="index.html">Boostrap</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="indexjs.html">Javascript</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="positioning.html">Positioning</a>
-              </li>
-            </ul>
-          </div>
-        </div>
-      </nav>
-    </div>
-    <div class="side-content">
+</head>
 
-      <div class="Tops">
-        <h1 class="h11" id="jquery-part">jQuery</h1>
-      </div>
-      <div class="row">
+<body>
+  <!-- Navegation Bar -->
 
-        <div class="colored1">
-          <h2 id="functions-amanda-part">jQuery Introduction</h2>
-          <ul>
-            <li>Get the jquery CDN from <a href="https://developers.google.com/speed/libraries#jquery">Google</a></li>
-            <li>The code is located in above the Script for Javascript, preferably</li>
-            <li>The code is written insdie the Javascript content</li>
-            <li>If the scripts are on th header, it is necessary to add a code in javascript that makes it load after everything else</li>
-            <ul>$(document).ready(function(){</ul>
-            <ul>$("h1").css("color", "red");    or any other code you are applying to your page</ul>
-            <ul>})</ul>
+  <div class="bar-bar">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <div class=" container-fluid">
+        <a class="navbar-brand amanda-display" href="">
+          <img class="image-start" src="https://media.giphy.com/media/26FxJ7Jx9D8BGk7gA/giphy.gif" alt="dog">
+          Amanda Atsumi</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item"><a class="nav-link" href="index.html">Boostrap</a></li>
+            <li class="nav-item"><a class="nav-link" href="indexjs.html">Javascript</a></li>
+            <li class="nav-item"><a class="nav-link" href="positioning.html">Positioning</a></li>
+            <li class="nav-item"><a class="nav-link" href="indexjq.html">jQuery</a></li>
+            <li class="nav-item"><a class="nav-link" href="commandline.html">Command Line</a></li>
+            <li class="nav-item"><a class="nav-link" href="node.html">Node JS</a></li>
           </ul>
-          <h2>Minify</h2>
-          <li><a href="</ul>">Minify</a> is used to reduce the code and make it the page load faster to save user's time</li>
-          </div>
-
         </div>
       </div>
+    </nav>
+  </div>
+  <div class="side-content">
 
-      <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js" integrity="sha384-SR1sx49pcuLnqZUnnPwx6FCym0wLsk5JZuNx2bPPENzswTNFaQU1RDvt3wT4gWFG" crossorigin="anonymous"></script>
-      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.min.js" integrity="sha384-j0CNLUeiqtyaRmlzUHCPZ+Gy5fQu0dQ6eZ/xAww941Ai1SxSY+0EQqNXNE6DZiVc" crossorigin="anonymous"></script>
-    </body>
-  </html>
+    <div class="tops">
+      <h1 class="h11" id="jquery-part">jQuery</h1>
+    </div>
+    <div class="row">
+      <div class="colored1">
+        <h2 id="functions-amanda-part">jQuery Introduction</h2>
+        <ul>
+          <li>Get the jquery CDN from "https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"
+            <a href="https://developers.google.com/speed/libraries#jquery">Google</a>
+          </li>
+          <li>The code is located in above the Script for Javascript, preferably</li>
+          <li>The code is written insdie the Javascript content</li>
+          <li>If the scripts are on th header, it is necessary to add a code in javascript that makes it load after everything else</li>
+          <li>"document.querySelector" or "SelectorAll" is replaced by
+            <strong>$</strong>
+          </li>
+          <ul>$(document).ready(function(){</ul>
+          <ul>$("h1").css("color", "red"); or any other code you are applying to your page</ul>
+          <ul>})</ul>
+        </ul>
+        <br>
+        <h2>Minify</h2>
+        <li>
+          <a href="https://www.minifier.org/">Minify</a>
+          is used to reduce the code and make it the page load faster to save user's time
+        </li>
+      </div>
+    </div>
+    <div class="colored2">
+      <h2>Manipulating Style</h2>
+      <ul>
+        <li>You can create a style in the CSS for a class and add is to the JS with a class method as
+          <strong>$("h1").addClass("class-name");</strong>
+        </li>
+        <li>You can remove a CSS style with a class method as
+          <strong>$("h1").removeClass("class-name");</strong>
+        <li>To add more than one class you add in the same place
+          <strong>$("h1").addClass("class-name other-class");</strong>
+        </li>
+        <li>To check if the element had that class
+          <strong>$("h1").hasClass("class-name");</strong>
+          and it will return
+          <strong>True</strong>
+          or
+          <strong>False</strong>
+        </li>
+      </ul>
+    </div>
+    <div class="colored1">
+      <h2>manipulating Text</h2>
+      <ul>
+        <li>Select the element you want change and add the new content
+          <strong>$("h1").text("Hello!");</strong>
+        </li>
+        <li>One other way is adding to the HTML as
+          <strong>$("h1").html("Hello!");</strong>
+        </li>
+        <ul>
+          <li>The text brings everything inside as text, and the HTML can add small styles as < em, strong,u> for example
+          </li>
+        </ul>
+      </ul>
+    </div>
+    <div class="colored2">
+      <h2>manipulating Attributes</h2>
+      <ul>
+        <li>Atributtes are the references we link in HTML, like Image(< img>), Anchor tags(< a>) or a Class</li>
+        <li>To change you need
+          <strong>$("img").attr("scr");</strong>
+        </li>
+        <li>To get the value through attribute
+          <strong>console.log($("img").attr("scr"));</strong>
+        </li>
+        <li>To get and Set the value for a attributre
+          <strong>$("a").attr("href", "https://colorhunt.co/");</strong>
+        </li>
+        <ul>
+          <li>The text brings everything inside as text, and the HTML can add small styles as < em, strong,u> for example
+          </li>
+        </ul>
+      </ul>
+    </div>
+    <div class="colored1">
+      <h2>Add eventListeners</h2>
+      <div class="row">
+        <div class="col-lg-6">
+          <ul>
+            <li>Click Function</li>
+            <ul>
+              <li>$("h1").click(function(){ $("h1").css("color", "purple");});</li>
+            </ul>
+            <li>To add it for a group of items (it runs through all buttons in the html):</li>
+            <ul>
+              <ul>$("button").click(function() {
+              </ul>
+              <ul>$("h1").css("color", "green"); });</ul>
+            </ul>
+            <li>To replace a element for the letter typed in the keyboard</li>
+            <ul>$(document).keydown(function(event){</ul>
+            <ul>$("h1").text(event.key); } );</ul>
+            <li>To change a color of a element by mouse</li>
+            <ul>$("h1").<strong>on</strong>("mouseover", function(){</ul>
+            <ul>$("h1").css("color", "purple"); } );</ul>
+            <li>Change the text with a click</li>
+            <ul>$("h1").click(function(){</ul>
+            <ul>$("h1").text("Te peguei de novo!");});</ul>
+            <li>To add elements before a element</li>
+            <ul>$("h1").<strong>before</strong>("< button>New</button>")</ul>
+          </ul>
+        </div>
+        <div class="col-lg-6">
+          <ul>
+            <li>After will add the button after H1</li>
+            <li>Prepend() will add the button at the beginning, inside the element</li>
+            <li>Append() will add the new button to the end, inside the element</li>
+            <li>To remove elements</li>
+            <ul>$("button").remove;</ul>
+            <li>To Hide an element: The element gets removed from the flow</li>
+            <ul>$("h1").on("click", function() {</ul>
+            <ul>("h1").hide(); } ) ;</ul>
+            <li>To Show an element: The element is added to the flow</li>
+            <ul>$("h1").on("click", function() {</ul>
+            <ul>("h1").show(); } ) ; </ul>
+            <li>To apply Toggle to an element</li>
+            <ul>$("h1").on("click", function() {</ul>
+            <ul>("h1").toggle(); } ) ; </ul>
+            <li>Other options are <strong>fadeOut, fadeIn, fadeToggle, slideUp, slideDown, slideToggle</strong> </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="colored2">
+      <h2>Add Animations</h2>
+      <ul>
+        <li>It is mostly used for changes with numerical inputs as <strong>Maring, Opacity,</strong> </li>
+        <li>It is percentage, it needs to be added in strings as "20%"</li>
+        <ul>$("h1").on("click", function() {</ul>
+        <ul>("h1").animate({opacity: 0.5});</ul>
+        <ul> } ) ; </ul>
+      </ul>
+      <h4>To Add multiple animations</h4>
+      <ul>
+        <ul>$("h1").on("click", function() {</ul>
+        <ul>("h1").slideUp().slideDown().animate({opacity: 0.5});</ul>
+      </ul>
+    </div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js" integrity="sha384-SR1sx49pcuLnqZUnnPwx6FCym0wLsk5JZuNx2bPPENzswTNFaQU1RDvt3wT4gWFG" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.min.js" integrity="sha384-j0CNLUeiqtyaRmlzUHCPZ+Gy5fQu0dQ6eZ/xAww941Ai1SxSY+0EQqNXNE6DZiVc" crossorigin="anonymous"></script>
+</body>
+
+<footer>
+  <p>2021 Amanda Atsumi</p>
+</footer>
+
+</html>

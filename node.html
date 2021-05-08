@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Node</title>
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@100;400;900&family=Roboto+Slab:wght@100;900&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/styles.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+
+  </head>
+  <body>
+    <!-- Navegation Bar -->
+    <div class="bar-bar">
+      <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class=" container-fluid">
+          <a class="navbar-brand amanda-display" href="">
+            <img class="image-start" src="https://media.giphy.com/media/KgFAKBOLz2edgGrYxB/giphy.gif" alt="llama">
+            Amanda Atsumi</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <ul class="navbar-nav ms-auto">
+              <li class="nav-item"><a class="nav-link" href="index.html">Boostrap</a></li>
+              <li class="nav-item"><a class="nav-link" href="indexjs.html">Javascript</a></li>
+              <li class="nav-item"><a class="nav-link" href="positioning.html">Positioning</a></li>
+              <li class="nav-item"><a class="nav-link" href="indexjq.html">jQuery</a></li>
+              <li class="nav-item"><a class="nav-link" href="commandline.html">Command Line</a></li>
+              <li class="nav-item"><a class="nav-link" href="node.html">Node JS</a></li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </div>
+
+    <!-- Content -->
+    <div class="side-content">
+      <div class="tops">
+        <h1 class="h11" id="node-part">Node</h1>
+      </div>
+      <div class="colored1">
+        <h2>Node REPL - Read Evaluation Print Loops</h2>
+        <ul>
+          <li>In Hyper enter
+            <strong>node</strong>
+            and it will bring Node Js to Hyper</li>
+          <li>It allows you to write code directly</li>
+          <li>To leave Node type
+            <strong>.exit</strong>
+            or press
+            <strong>Control + C</strong>
+          </li>
+          <li>To clear the console type
+            <strong>Clear</strong>
+          </li>
+        </ul>
+      </div>
+      <div class="colored2">
+        <h2>Native Node Modules</h2>
+        <ul>
+          <li>All information is entered in the Javascript file for Node</li>
+          <li>In the
+            <a href="https://nodejs.org/api/">Node Api</a>
+            you will check the commands suggested</li>
+          <li>Click on
+            <a href="https://nodejs.org/api/fs.html">File System</a>
+            which helps to interact with the local file system (copy, delete, open...)</li>
+          <ul>
+            <li>
+              <strong>const a = 1</strong>
+              works like
+              <strong>var</strong>
+              but you cannot change the value later</li>
+            <ul>
+              <li>
+                <strong>const fs = require("fs")</strong>
+              </li>
+              <ul>In order to use modules of packages it is necessary to require it, and the module's name on it</ul>
+              <ul>cons name = require("module name")</ul>
+              <li>If Atam gives you an warming "JSHint - 'const' is only available in ES6 you type in the first line
+                <strong>//jshint esversion:6</strong>
+                and it will tell Atom you are using version 6</li>
+            </ul>
+        </ul>
+        <br>
+        <h3>To Create a copy of a file</h3>
+        <ul>
+          <li>You need to select the file you want to copy (file1.txt) and name the new file (file2.txt)</li>
+          <ul>const fs = require("fs");</ul>
+          <ul>fs.copyFyleSync("file1.txt","file2.txt")</ul>
+          <li>In Hyper move to the same directory where the folder is contained</li>
+          <li>Type
+            <strong>node index.js</strong>
+            and it will show the prompt in the same directory as before</li>
+          <li>When you go back to Atom, there is a new file with the new name created</li>
+          <li>
+            <strong>If you change any information in the new file and save, and run the command in Hyper again, it will replace the new information for the same initial content of file one</strong>
+          </li>
+        </ul>
+    </ul>
+  </div>
+  <div class="colored2">
+    <h2>npm</h2>
+    <ul>
+      <li>
+        <strong>
+          <a href="https://www.npmjs.com/">npm</a>
+        </strong>
+        is Node Package Manager. It's a package manager for external modules (source for execute codes previously written)</li>
+      <li>In Hyper type
+        <strong>npm init</strong>
+        and it will bring the npm information</li>
+      <li>It will ask you the information of the file you are creating and suggest some entries. You click enter for to confirm</li>
+      <li>A new file will be created in Atom called
+        <strong>package.json</strong>
+        containing the information you just entered</li>
+      <li>Any other NPM package installed will also be shown in this file</li>
+    </ul>
+    <br>
+    <h3>Installing Packages from npm</h3>
+    <li>Look for the command you want to run</li>
+    <li>The example is Superhero names, and the package is called superheroes</li>
+    <li>Check the instructions on how to install and use the packaged on npm</li>
+    <li>on Hyper, make sure you are in the correct directory and type the name of the package, exactly how it is spelled in npm</li>
+    <li>It will add a line of
+      <strong>dependencies</strong>
+      in the package.json file</li>
+    <li>In Javascript you can
+      <strong>require</strong>
+      the package using Var or Const to run the code</li>
+    <ol>
+      <li>Using
+        <strong>var</strong>
+      </li>
+      <ul>var superheroes = require('superheroes');</ul>
+      <ul>var mySHName = superheroes.random();</ul>
+      <ul>console.log(mySHName);</ul>
+      <li>Using
+        <strong>const</strong>
+      </li>
+      <ul>const superheroes = require('superheroes');</ul>
+      <ul>superheroes.all;</ul>
+      <ul>var i = superheroes.random();</ul>
+      <ul>console.log(i)</ul>
+    </ol>
+  </div>
+  <div class="colored1">
+    <h2>Express</h2>
+    <div class="row">
+
+<div class="col-lg-6">
+    <ul>
+      <li>It was build to avoid repetitive codes</li>
+      <li>To download it you go to
+        <a href="http://expressjs.com/">Express Js</a>
+        and check how to install in Hyper</li>
+      <li>Currently, it is
+        <strong>npm install express</strong>
+      </li>
+      <li>After it is done, it will be listed in the package json file</li>
+      <li>When requiring express, every <strong>app.get</strong> is a <strong>ROUTE</strong> and every route can be a new page of the website</li>
+      <li>To require express you need to enter</li>
+      <ol>
+        <li>const express = require("express");</li>
+        <li>const app = express();</li>
+        <li>app.get("/", function(req, res){</li>
+        <li>res.send("< h1>Text< /h1>")</li>
+        <li>});</li>
+        <li>app.get("/contact", function(req, res){</li>
+        <li>res.send("< h1>Text< /h1>")</li>
+        <li>});</li>
+        <li>app.listen(3000, function(){</li>
+        <li>console.log("Server started on Port 3000")</li>
+        <li>});</li>
+      </ol>
+    </div>
+      <div class="col-lg-6">
+        <p>This instructions will help to require express</p>
+        <p>The <strong>const</strong>s are refering to express </p>
+        <p><strong>App.get</strong> is refering to the local file <strong>/</strong></p>
+        <p>The app.get is how the <strong>Route</strong> is defined</p>
+        <p>The <strong>function(req, res)</strong> determines what is the response once the serves requests access</p>
+        <p><strong>res.send</strong> is the response to the request done, and get rendered in the browser</p>
+        <p><strong>app.listen</strong> is referring to <strong>Port 3000</strong></p>
+        <p>The function in the app.listen is the callback</p>
+        <h4><a href="https://nodemon.io/">Nodemon</a></h4>
+        <p>Detects every change in your code and restarts the code automatically, so there's no need to restart the server on every change</p>
+        <p>To install in Hyper type <strong>npm install -g nodemon</strong> and if it doesn't work, <strong>npm i pstree.remy@1.1.0 -D</strong></p>
+      </div>
+    </div>
+
+  </ul>
+</div>
+<div class="colored2">
+  <h2>Workflow Creating a New Website</h2>
+  <ol>
+    <li>Open a new Hyper terminal</li>
+    <li>Create a Folder for your project</li>
+    <li>Create a <strong>file.js</strong></li>
+    <li>Initialize npm with <strong>npm init</strong> and complete the project information</li>
+    <li>Open in atom with <strong>atom .</strong></li>
+    <li>Install express with <strong>npm install express</strong></li>
+    <li>Require express on atom in the Javascript file</li>
+    <li></li>
+  </ol>
+</div>
+</div>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js" integrity="sha384-SR1sx49pcuLnqZUnnPwx6FCym0wLsk5JZuNx2bPPENzswTNFaQU1RDvt3wT4gWFG" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.min.js" integrity="sha384-j0CNLUeiqtyaRmlzUHCPZ+Gy5fQu0dQ6eZ/xAww941Ai1SxSY+0EQqNXNE6DZiVc" crossorigin="anonymous"></script>
+
+</body>
+<footer>
+<p>2021 Amanda Atsumi</p>
+</footer>
+</html>

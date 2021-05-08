@@ -35,11 +35,12 @@
                 <li><a class="dropdown-item" href="#variables-amanda-part">Variables</a></li>
                 <li><a class="dropdown-item" href="#call-function-amanda-part">Calling Functions</a></li>
                 <li><a class="dropdown-item" href="#return-amanda-part">Return Functions</a></li>
+              </ul>
             </li>
-
-          </ul>
-          <li class="nav-item"><a class="nav-link" href="positioning.html">Positioning</a></li>
-          <li class="nav-item"><a class="nav-link" href="indexjq.html">jquery</a></li>
+            <li class="nav-item"><a class="nav-link" href="positioning.html">Positioning</a></li>
+            <li class="nav-item"><a class="nav-link" href="indexjq.html">jQuery</a></li>
+            <li class="nav-item"><a class="nav-link" href="commandline.html">Command Line</a></li>
+            <li class="nav-item"><a class="nav-link" href="node.html">Node JS</a></li>
           </ul>
         </div>
       </div>
@@ -75,7 +76,7 @@
   </div>
   <!-- Top content -->
   <div class="side-content">
-    <div class="Tops">
+    <div class="tops">
       <h1 class="h11" id="javascript-part">Javascript</h1>
     </div>
     <div class="colored1">
@@ -161,8 +162,8 @@
           </ul>
         </ul>
     </div>
-    <div class="row more">
-      <div class="col-lg-6 colored1">
+    <div class="row">
+      <div class="col-lg-6 colored1 more">
         <h2 id="math-amanda-part" class="math">Math</h2>
         <ul>
           <li>Increment: Var x = 5 ==> x = x + 1 or <strong class="ops">x++</strong> ==> 6 </li>
@@ -351,10 +352,7 @@
         <H2>Foor Loops (iterate)</H2>
         <ul>
           <li>It is written <strong>for (start; end; change) {do something}</strong></li>
-
-
         </ul>
-
       </div>
       <div class="col-lg-6 colored2 example">
         <h2>Fibonacci challenge</h2>
@@ -441,7 +439,6 @@
             <ul>
               <li>Examples: click(), appendChild(), setAttribute() </li>
             </ul>
-
           </ul>
           <li><strong>Methods</strong>: What the object can do (car actions)</li>
         </ul>
@@ -524,7 +521,6 @@
               <ul>}</ul>
             </ul>
           </ul>
-
         </ul>
       </div>
     </div>
@@ -550,7 +546,8 @@
           <ul>
             <li>To refer to the button, and only the first one to test, refer to the class of the button </li>
             <li>Then, <strong>document.querySelector("").methodOfYourChoice</strong></li>
-            <li><strong>document.querySelector("button").addEventListener("EventType","Javascript Function")</strong></li>
+            <li><strong>document.querySelector("button")</li>
+            <ul>.addEventListener("EventType","Javascript Function")</strong></ul>
             <li>Do not add the parantesis in the function when calling the event, or it will call the envent when the page loads</li>
             <li>This calls passing the Javascript Function as a <strong>input</strong> so you can call it later, in this case, with the click</li>
             <li>The other option is write the function as a anonymous function</li>
@@ -595,7 +592,6 @@
             <li>To add data to this function, I should use </li>
             <li><strong>var bellboy1 = new BellBoy(Tim, 19, yes, english)</strong></li>
             <li>Than in the Console enter: <strong>console.log(bellboy1.years)</strong> to be able to retrice the information for that data</li>
-
           </ul>
           <br>
           <h2>Adding a function to an object (METHOD)</h2>
@@ -616,7 +612,9 @@
             <li>To call this Method <strong>bellboy1.moveSuitcase();</strong></li>
             <li>The difference between a Method and a Property are the <strong>( )</strong></li>
             <li>To add this function to the Construction function, add the this</li>
-            <ul><li>this.moveSuitcase: .....</li></ul>
+            <ul>
+              <li>this.moveSuitcase: .....</li>
+            </ul>
           </UL>
       </div>
       <div class="col-lg-6 colored2">
@@ -651,11 +649,12 @@
         </ul>
       </div>
     </div>
-
-  </div>
   </div>
   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js" integrity="sha384-SR1sx49pcuLnqZUnnPwx6FCym0wLsk5JZuNx2bPPENzswTNFaQU1RDvt3wT4gWFG" crossorigin="anonymous"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.min.js" integrity="sha384-j0CNLUeiqtyaRmlzUHCPZ+Gy5fQu0dQ6eZ/xAww941Ai1SxSY+0EQqNXNE6DZiVc" crossorigin="anonymous"></script>
 </body>
+<footer>
+  <p>2021 Amanda Atsumi</p>
+</footer>
 
 </html>
