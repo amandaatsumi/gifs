@@ -1,6 +1,8 @@
 body {
   font-family: 'Raleway', sans-serif;
   line-height: 1.5;
+  position: relative;
+  margin: 0 10%;
 }
 
 ul {
@@ -9,11 +11,21 @@ ul {
 
 h2 {
   text-align: center;
+  font-family: 'Roboto Slab-bold', serif;
 }
 
-h3 {
+h3, h4 {
   text-align: center;
 }
+
+footer{
+background-color: #9fb8ad;
+text-align: center;
+font-size: 1rem;
+color: #fff;
+margin: 1% 10% 0 10%;
+}
+
 
 .h11 {
   font-size: 5rem;
@@ -24,18 +36,18 @@ h3 {
 }
 
 .side-content {
+  margin: 0 10% 10px 10%;
   position: relative;
-  margin: 0 10%;
-  top: 60px;
+  top: 80px;
 }
 
 .amanda-display {
   font-size: 3rem;
-  color: #8fd9a8;
+  color: #77acf1;
 }
 
-.Tops {
-  background-color: #8fd9a8;
+.tops {
+  background-color: #383e56;
   text-align: center;
   font-family: 'Roboto Slab-bold', serif;
   margin: 0 0 10px 0;
@@ -44,7 +56,7 @@ h3 {
 }
 
 .colored2 {
-  background-color: #8fd9a8;
+  background-color: #c5d7bd;
   font-family: 'Roboto Slab', serif;
   padding: 40px 0 30px 0;
   margin: 0;
@@ -58,11 +70,12 @@ h3 {
 }
 
 .bar-bar {
-  position: relative;
+
   position: fixed;
   z-index: 1;
   right: 0;
   left: 0;
+  top: 0;
 }
 
 .row {
@@ -73,9 +86,9 @@ h3 {
   padding: 0 0;
 }
 
-body, .positioning{
+/* .positioning{
   margin: 0 10%;
-}
+} */
 @media (max-width: 1000px) {
   .amanda-display {
     font-size: 2rem;
