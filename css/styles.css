@@ -17,7 +17,10 @@ h2 {
 h3, h4 {
   text-align: center;
 }
-
+h6{
+  font-family: 'Raleway', sans-serif;
+    text-align: center;
+}
 footer{
 background-color: #9fb8ad;
 text-align: center;
@@ -26,11 +29,51 @@ color: #fff;
 margin: 1% 10% 0 10%;
 }
 
-
 .h11 {
   font-size: 5rem;
+  text-align: center;
+    font-family: 'Roboto Slab-bold', serif;
 }
 
+.bib{
+  width: 5%;
+  text-align: left;
+  position: fixed;
+  top: 100px;
+  left: 20px;
+}
+.img-logo{
+  text-align: center;
+  position: relative;
+  top: 20px;
+  background-color: #d8e3e7;
+
+}
+.sparkle{
+  position:relative;
+}
+.initial-content{
+  margin:0;
+}
+.footin{
+  margin:0;
+
+}
+.initial1{
+padding: 3%;
+background-color: #289672;
+
+}
+.initial2{
+  padding: 90px;
+  background-color: #d8e3e7;
+    font-family: 'Raleway', sans-serif;
+
+}
+.initial3{
+  padding: 10%;
+
+}
 .image-start {
   width: 50px;
 }
